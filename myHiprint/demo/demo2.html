@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://hiprint.io/demo/demo2 -->
+<html lang="zh-CN"><script src="./demo2_files/f.txt"></script><script src="./demo2_files/f(1).txt" id="google_shimpl"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="hiprint,一个可以跨平台windows,mac,linux运行的js打印插件,打印自动分页">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>hiprint.io</title>
+    <link href="./demo2_files/hinnn.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="./demo2_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./demo2_files/document.css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link href="./demo2_files/hinnn.css" rel="stylesheet">
+    <link href="./demo2_files/home.css" rel="stylesheet">
+    <link href="./demo2_files/font-awesome-ie7.min.css" rel="stylesheet">
+    <link href="./demo2_files/font-awesome.min.css" rel="stylesheet">
+    <link href="./demo2_files/hiprint.css" rel="stylesheet">
+    <link href="./demo2_files/print-lock.css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script> -->
+     <script src="./demo2_files/jquery.js.下载"></script>
+
+    <script data-ad-client="ca-pub-2624961100945767" async="" src="./demo2_files/f(2).txt" data-checked-head="true"></script>
+<meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><link rel="preload" href="./demo2_files/f(3).txt" as="script"><script type="text/javascript" src="./demo2_files/f(3).txt"></script><style type="text/css">.hicontextmenu {
+	position: absolute;
+	display: inline-block;
+	width: 215px;
+	padding: 0 0;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	list-style-type: none;
+	list-style: none;
+	background: #fff;
+	border: 1px solid #bebebe;
+	border-radius: 2px;
+	font-size: 13px;
+}
+
+.hicontextmenuroot .hicontextmenuitem {
+	position: relative;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	padding: .2em 12px;
+	color: #2f2f2f;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	text-decoration: none;
+
+	user-select: none;
+	background-color: #fff;
+
+}
+
+.hicontextmenuroot>.hicontextmenuitem:hover,
+.hicontextmenuroot .hicontextmenuitem > a:hover {
+	background-color: #f3f3f3;
+}
+
+.hicontextmenuroot .hicontextmenuitem>a {
+	text-decoration: none;
+	color: #363636;
+	line-height: 22px;
+
+}
+
+.hicontextmenuroot .hicontextsubmenu>ul {
+	display: none;
+	position: absolute;
+
+}
+
+.hicontextmenuroot .hicontextsubmenu:hover>ul {
+	display: block;
+	left: 100%;
+	top: -1px;
+	margin-left: 0px;
+}
+
+.hicontextmenuroot .borderBottom {
+	border-bottom: 1px solid #efe6e6;
+}
+
+.hicontextmenuroot .disable> a {
+  
+    color: #ccc;
+   
+}
+.hicontextmenuroot>.disable:hover,
+.hicontextmenuroot .disable> a:hover {
+	background-color:#fff;
+}</style><style type="text/css">.tctip{position:fixed;_position:absolute;right:0;z-index:10000;padding-left:34px;width:0;overflow:hidden;box-sizing:content-box}.tctip li,.tctip ul{margin:0;padding:0}.tctip img{border:0;display:block}.tctip a{color:#000;text-decoration:none;outline:0 none}.tctip .tctip-btn-box{position:absolute;left:0;top:50%;margin-top:-46px;width:34px;height:93px}.tctip .tctip-main-box{width:240px;height:332px;font:12px/1.5 microsoft yahei,tahoma,arial,sans-serif;color:#000;background-color:#fff;border:1px solid #dbdbdb;border-right:none}.tctip .tctip-main-box .tctip-footer,.tctip .tctip-main-box .tctip-title{margin:0;height:26px;line-height:26px;background-color:#e7e7e7}.tctip .tctip-main-box .tctip-title{padding:0 0 0 6px;font-size:14px;font-weight:400;background-image:none}.tctip .tctip-main-box .tctip-footer{padding-right:6px;font-size:12px;text-align:right}.tctip .tctip-main-box .tctip-footer a:hover{text-decoration:underline}.tctip .tctip-main-box .tctip-body-box{font-size:0;background-color:#eee;width:240px}.tctip .tctip-main-box .tctip-body-box .tctip-icon-box{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;width:90px;font-size:12px}.tctip .tctip-main-box .tctip-body-box .tctip-icon-box ul{list-style:none}.tctip .tctip-main-box .tctip-body-box .tctip-icon-box ul a.fifth{border-bottom:none}.tctip .tctip-main-box .tctip-body-box .tctip-icon-box ul.not-full{border-top:1px solid #dfdfdf}.tctip .tctip-main-box .tctip-body-box .tctip-icon-box ul li{display:block;height:56px;-webkit-transition:background-color .2s linear;transition:background-color .2s linear}.tctip .tctip-main-box .tctip-body-box .tctip-icon-box ul li.tctip-current{border-right:none}.tctip .tctip-main-box .tctip-body-box .tctip-icon-box ul li.tctip-current a,.tctip .tctip-main-box .tctip-body-box .tctip-icon-box ul li.tctip-current a:hover{background-color:#fff}.tctip .tctip-main-box .tctip-body-box .tctip-icon-box ul li a{position:relative;display:block;padding-left:40px;height:55px;line-height:55px;font-size:12px;border-bottom:1px solid #ccc}.tctip .tctip-main-box .tctip-body-box .tctip-icon-box ul li a img{position:absolute;left:6px;top:13px;width:30px;height:30px}.tctip .tctip-main-box .tctip-body-box .tctip-qr-detail{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;width:150px;height:280px;font-size:12px;background-color:#fff}.tctip .tctip-main-box .tctip-body-box .tctip-qr-detail .tctip-qr-box{}.tctip .tctip-main-box .tctip-body-box .tctip-qr-detail .tctip-qr-box .tctip-qr-title{margin:0 0 20px;width:132px;height:30px;line-height:30px;font-size:12px;text-align:center}.tctip .tctip-main-box .tctip-body-box .tctip-qr-detail .tctip-qr-box .tctip-qr-code{margin:0 0 40px;width:106px;height:106px;background:url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABkAAD/4QNvaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6QjgxOTIzMjRGMjhCRTQxMTk5QjZGNERBNDI5NUVBNjEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjkxODAwMUY4Q0Y4MTFFNEE0NkVCQUVGNjA3MDhFMzUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjkxODAwMUU4Q0Y4MTFFNEE0NkVCQUVGNjA3MDhFMzUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBNzMwMTIzMEZBOEJFNDExOTlCNkY0REE0Mjk1RUE2MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCODE5MjMyNEYyOEJFNDExOTlCNkY0REE0Mjk1RUE2MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv/uAA5BZG9iZQBkwAAAAAH/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQECAgICAgICAgICAgMDAwMDAwMDAwMBAQEBAQEBAgEBAgICAQICAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA//AABEIAIIAggMBEQACEQEDEQH/xAB+AAEAAwEBAQEAAAAAAAAAAAAABgcIBQMECgEBAAAAAAAAAAAAAAAAAAAAABAAAQIEAAoGBgcJAQAAAAAAAAIDAQQFBhHUlbUWNlZ2mNgxYRITMzUhUVODFDRBIjJSYmNlcYEjcyRUdRc4SBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A/eRLy6rpi7PTzr8KHB99im01h52Xan2pd1bC6lUlsqbdmW5l1tUWWYq7mDPZUpKlK+oH26HWl9Nr27HrVRaapUeuKlS0VRj+0BodaOy1uZEpmKgNDrR2WtzIlMxUBodaOy1uZEpmKgNDrR2WtzIlMxUBodaOy1uZEpmKgNDrR2WtzIlMxUBodaOy1uZEpmKgNDrR2WtzIlMxUBodaOy1uZEpmKgNDrR2WtzIlMxUBodaOy1uZEpmKgNDrR2WtzIlMxUBodaOy1uZEpmKgeL1uNSCVTVswRSJ1qEVok2Yqao0/wBmGH4Wdp6P6ZpL3RB5pCHm4xwwjGGFKg5n+wKZ/azflHx3QnzPZ7/K9X2OsDs2dqla8fXbtFVHrUqmyylRj1xVHCBIwAAAAAAAAAAAAAAAADOeCHq/9D9x7n2X8vq6ALps7VG1t3KJmyVAkYAAAAAAAAAAAAAAAABnPmMAumztUbW3combJUCRgAAAAAAAAAAAAAAAAGc+YwC6bO1RtbdyiZslQJGAAAAAAAAAAAAAAAAAZz5jALps7VG1t3KJmyVAkYAAAAAAAAAAAAAAAABnPmMAumztUbW3combJUCRgAAAABznaRSX5pE8/S6c9OtqQtucdkpZyaQtpSFtqRMLai8lTa20xTGEcMIphGHRADogAAAAAAAAAGc+YwC6bO1RtbdyiZslQJGAAAAAAAAAAAAAAAAAZz5jALps7VG1t3KJmyVAkYAAAAAAAAAAAAAAAABnPmMAumztUbW3combJUCRgAAAAAAAAAAAAAAAAGc+YwC6bO1RtbdyiZslQJGAAAAAAAAAAAAAAAAAZz5jALps7VG1t3KJmyVAkYAAAAAAAAAAAAAAAABnPmMAumztUbW3combJUCRgAAAAB4PTDcv3XbS+rvXm2EdzLTEzgW6qCUqd+Had7lmEY/WcX2W0Q9KlQh6QPcAAAAAAAAAAznzGAXTZ2qNrbuUTNkqBIwAAAAAAAAAAAAAAAADOfMYBdNnao2tu5RM2SoEjAAAAAAAAAAAAAAAAAM58xgFxW2+iQaTbM0qDU7SUKZk21xgn46jNLiinzsrhwd8luV7Db0E4YtvJjCPoimKglQAAAAAAAAAAAAAAADm1Sqy1Jlu/fipbriu6k5NrAqbn5tUP4UpKNYcLr7qv3JhhUqMEwjGAVjoNW/ayvj6Y+JHXn2PR5d+Z0/hAkt/eVy3lPzUPnvMvsR1f/Vfu/hwgVdDoh/0P7jwfdfl+rqAcRgDiMAcRgDiMAcRgDiMAcRgDiMAcRgDiMAcRgDiMAcRgEssbzl3xvlV64a8/R4P6b9/rwAXAB//2Q==) no-repeat;box-sizing:content-box}.tctip .tctip-main-box .tctip-body-box .tctip-qr-detail .tctip-qr-box .tctip-qr-code img{width:150px;height:150px}.tctip .tctip-main-box .tctip-body-box .tctip-qr-detail .tctip-qr-box .tctip-qr-desc{font-size:12px;word-break:break-all;text-align:center}</style><meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="></head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-sm" href="http://hiprint.io/">Hiprint</a>
+            </div>
+            <div class="navbar-collapse collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    
+                    <li><a href="http://hiprint.io/demo">Hiprint2中文文档</a></li>
+                    <li><a href="http://hiprint.io/demo/list">Hiprint在线实例</a></li>
+                    <li><a href="http://hiprint.io/demo/list/htmlTopdf">Hiprint转PDF</a></li>
+                    <li><a href="http://hiprint.io/updatelogs">更新日志</a></li>
+                    
+                    
+                    <li><a href="http://hiprint.io/design">模板设计</a></li>
+                    <li><a href="http://hiprint.io/download">下载 v2.5.3</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-sm">
+                    <li><a href="javascript:void(0)">q群 867788017 vip群 866855396</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper" style="margin-top:50px;">
+        
+
+<link href="./demo2_files/hiprint.css" rel="stylesheet">
+<link href="./demo2_files/print-lock.css" rel="stylesheet">
+<link media="print" href="./demo2_files/print-lock.css" rel="stylesheet">
+<layout class="layout hinnn-layout hinnn-layout-has-sider height-100-per" style="background:#fff;min-width:1000px;">
+    <sider class="hinnn-layout-sider" style="flex: 0 0 80px; max-width: 80px; min-width: 80px; width: 80px;">
+        <nav class="hinnn-docs-sidebar" style="width:80px;height:100%;">
+    <ul class="nav hinnn-docs-sidenav">
+
+        <li>
+            <a href="http://hiprint.io/demo">实例</a>
+
+        </li>
+        <li>
+            <a href="http://hiprint.io/demo/demo2">实例2</a>
+
+        </li>
+        <li>
+            <a href="http://hiprint.io/demo/demo3">实例3</a>
+
+        </li>
+        <li>
+            <a href="http://hiprint.io/docs/start">开始</a>
+
+        </li>
+        <li>
+            <a href="http://hiprint.io/docs/template">模板</a>
+
+        </li>
+        <li>
+            <a href="http://hiprint.io/docs/panel">面板</a>
+
+        </li>
+        <li>
+            <a href="http://hiprint.io/docs/text">文本</a>
+
+        </li>
+
+        <li>
+
+        </li>
+
+        <li>
+            <a href="http://hiprint.io/docs/image">图片</a>
+
+        </li>
+
+        <li>
+            <a href="http://hiprint.io/docs/hline">横线</a>
+        </li>
+        <li>
+            <a href="http://hiprint.io/docs/vline">竖线</a>
+        </li>
+        <li>
+            <a href="http://hiprint.io/docs/rect">矩形</a>
+        </li>
+        <li>
+            <a href="http://hiprint.io/docs/oval">椭圆</a>
+        </li>
+        <li>
+            <a href="http://hiprint.io/docs/table">表格</a>
+        </li>
+        <li>
+            <a href="http://hiprint.io/docs/longText">长文</a>
+
+        </li>
+        <li>
+            <a href="http://hiprint.io/demo/demo2#helper-classes">html</a>
+
+        </li>
+        <li>
+            <a href="http://hiprint.io/docs/paperNumber">页码</a>
+
+        </li>
+        <li>
+            <a href="http://hiprint.io/docs/paperHeader">页眉</a>
+
+        </li>
+
+        <li>
+            <a href="http://hiprint.io/docs/paperFooter">页脚</a>
+
+        </li>
+    </ul>
+</nav>
+
+    </sider>
+
+    <content class="hinnn-layout-content" style="border-left:1px solid #e8e8e8; ">
+        <div class="container-fluid height-100-per print-content" tabindex="1" style="overflow: hidden; outline: none;">
+            <div class="hinnn-callout hinnn-callout-danger small-callout">
+                <p><code>配置方式</code><code>拖拽结果以json形式存在</code>，点击下方生成json按钮。<code>配置版以开发人员配置为主，用户拖拽结果无法编辑filed</code>配置版和自定义版可同时使用</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-2 " style="padding-right:0px;">
+
+                    <div class="small-printElement-types hiprintEpContainer">
+
+                    <ul class="hiprint-printElement-type"><li><span class="title">常规</span><ul><li><a class="ep-draggable-item" tid="configModule.name">  姓名 </a></li><li><a class="ep-draggable-item" tid="configModule.mySite">  个人网页 </a></li><li><a class="ep-draggable-item" tid="configModule.gender">  性别 </a></li><li><a class="ep-draggable-item" tid="configModule.like">  爱好 </a></li><li><a class="ep-draggable-item" tid="configModule.email">  邮箱 </a></li><li><a class="ep-draggable-item" tid="configModule.address">  地址 </a></li><li><a class="ep-draggable-item" tid="configModule.phone">  电话 </a></li><li><a class="ep-draggable-item" tid="configModule.target">  目标 </a></li><li><a class="ep-draggable-item" tid="configModule.image">  图片 </a></li><li><a class="ep-draggable-item" tid="configModule.workExperience">  工作经历 </a></li><li><a class="ep-draggable-item" tid="configModule.workExperience2">  工作经历-多表头 </a></li><li><a class="ep-draggable-item" tid="configModule.html">  html </a></li><li><a class="ep-draggable-item" tid="configModule.customText">  自定义文本 </a></li></ul></li><li><span class="title">专业</span><ul><li><a class="ep-draggable-item" tid="configModule.professional">  专业 </a></li><li><a class="ep-draggable-item" tid="configModule.university">  大学 </a></li><li><a class="ep-draggable-item" tid="configModule.universityAddress">  地点 </a></li><li><a class="ep-draggable-item" tid="configModule.universityDate">  时间 </a></li><li><a class="ep-draggable-item" tid="configModule.tech">  技能 </a></li></ul></li><li><span class="title">辅助</span><ul><li><a class="ep-draggable-item" tid="configModule.hline">  横线 </a></li><li><a class="ep-draggable-item" tid="configModule.vline">  竖线 </a></li><li><a class="ep-draggable-item" tid="configModule.rect">  矩形 </a></li><li><a class="ep-draggable-item" tid="testModule.oval">  椭圆 </a></li></ul></li></ul></div>
+
+                </div>
+                <div class="col-md-10 ">
+                    <div class="hiprint-toolbar" style="margin-top:15px;">
+                        <ul>
+                            <li><a class="hiprint-toolbar-item" onclick="setPaper(&#39;A3&#39;)">A3</a></li>
+                            <li><a class="hiprint-toolbar-item" onclick="setPaper(&#39;A4&#39;)">A4</a></li>
+                            <li><a class="hiprint-toolbar-item" onclick="setPaper(&#39;A5&#39;)">A5</a></li>
+                            <li><a class="hiprint-toolbar-item" onclick="setPaper(&#39;B3&#39;)">B3</a></li>
+                            <li><a class="hiprint-toolbar-item" onclick="setPaper(&#39;B4&#39;)">B4</a></li>
+                            <li><a class="hiprint-toolbar-item" onclick="setPaper(&#39;B5&#39;)">B5</a></li>
+                            <li><a class="hiprint-toolbar-item">自定义</a></li>
+                            <li><a class="hiprint-toolbar-item"><input type="text" id="customWidth" style="width: 50px;height: 19px;border: 0px;" placeholder="宽/mm"></a></li>
+                            <li><a class="hiprint-toolbar-item"><input type="text" id="customHeight" style="width: 50px;height: 19px;border: 0px;" placeholder="高/mm"></a></li>
+
+                            <li><a class="hiprint-toolbar-item" onclick="setPaper($(&#39;#customWidth&#39;).val(),$(&#39;#customHeight&#39;).val())">确定</a></li>
+                            <li><a class="hiprint-toolbar-item" onclick="rotatePaper()">旋转</a></li>
+                            <li><a class="hiprint-toolbar-item" onclick="clearTemplate()">清空</a></li>
+                            <li>
+                                <a class="btn hiprint-toolbar-item " style="color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;" onclick="preview()">预览</a>
+                            </li>
+                            <li>
+                                <a class="btn hiprint-toolbar-item " style="color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;" onclick="directPrint()">打印</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hiprint-printPagination"><ul class="hiprint-pagination"><li><span>1</span><a href="javascript:void(0);">x</a></li><li><span>+</span></li></ul></div>
+                    <div id="hiprint-printTemplate" class="hiprint-printTemplate" style="margin-top:20px;margin-left:20px;">
+
+                    <div class="hiprint-printPanel panel-index-0"><div class="hiprint-printPaper hidroppable design" original-height="297" style="width: 210mm; height: 296mm;"><div class="hiprint-printPaper-content"><div class="hiprint-headerLine hideheaderLinetarget" style="position: absolute; width: 100%; border-top: 1px dashed rgb(201, 190, 190); height: 7pt; top: -1pt;"></div><div class="hiprint-footerLine" style="position: absolute; width: 100%; border-top: 1px dashed rgb(201, 190, 190); height: 7pt; top: 805pt;"></div><span class="hiprint-paperNumber" style="position: absolute; top: 819pt; left: 565pt;">1-1</span><div tabindex="1" class="hiprint-printElement hiprint-printElement-text design" style="position: absolute; width: 107pt; height: 42pt; font-size: 19pt; font-weight: 700; text-align: center; line-height: 39pt; left: 20pt; top: 25pt;"><div class="hiprint-printElement-text-content hiprint-printElement-content" style="height:100%;width:100%">古力娜扎</div><div panelindex="1" class="resize-panel" style="width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; background-color: rgba(0, 0, 0, 0.5); cursor: move; display: none;"><div class="s resizebtn" style="cursor: s-resize; bottom: -12px; margin-left: -4px; left: 50%; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div><div class="e resizebtn" style="cursor: e-resize; top: 50%; margin-top: -4px; right: -12px; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div></div></div><div tabindex="1" class="hiprint-printElement hiprint-printElement-text design" style="position: absolute; width: 165pt; height: 13pt; left: 390pt; top: 35pt;"><div class="hiprint-printElement-text-content hiprint-printElement-content" style="height:100%;width:100%">邮箱：hinnn.com@gmail.com</div><div panelindex="2" class="resize-panel" style="width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; background-color: rgba(0, 0, 0, 0.5); cursor: move; display: none;"><div class="s resizebtn" style="cursor: s-resize; bottom: -12px; margin-left: -4px; left: 50%; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div><div class="e resizebtn" style="cursor: e-resize; top: 50%; margin-top: -4px; right: -12px; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div></div></div><div tabindex="1" class="hiprint-printElement hiprint-printElement-text design" style="position: absolute; width: 165pt; height: 13pt; left: 390pt; top: 55pt;"><div class="hiprint-printElement-text-content hiprint-printElement-content" style="height:100%;width:100%">地址：北京朝阳区</div><div panelindex="3" class="resize-panel" style="width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; background-color: rgba(0, 0, 0, 0.5); cursor: move; display: none;"><div class="s resizebtn" style="cursor: s-resize; bottom: -12px; margin-left: -4px; left: 50%; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div><div class="e resizebtn" style="cursor: e-resize; top: 50%; margin-top: -4px; right: -12px; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div></div></div><div tabindex="1" class="hiprint-printElement hiprint-printElement-text design" style="position: absolute; width: 165pt; height: 13pt; left: 390pt; top: 75pt;"><div class="hiprint-printElement-text-content hiprint-printElement-content" style="height:100%;width:100%">电话：18888888888</div><div panelindex="4" class="resize-panel" style="width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; background-color: rgba(0, 0, 0, 0.5); cursor: move; display: none;"><div class="s resizebtn" style="cursor: s-resize; bottom: -12px; margin-left: -4px; left: 50%; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div><div class="e resizebtn" style="cursor: e-resize; top: 50%; margin-top: -4px; right: -12px; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div></div></div><div class="hiprint-printElement hiprint-printElement-hline design" style="border-width: 0.75pt; position: absolute; width: 573pt; height: 10pt; left: 10pt; top: 110pt;" tabindex="1"><div panelindex="5" class="resize-panel" style="width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; background-color: rgba(0, 0, 0, 0.5); cursor: move; display: none;"><div class="e resizebtn" style="cursor: e-resize; top: 50%; margin-top: -4px; right: -12px; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div></div></div><div tabindex="1" class="hiprint-printElement hiprint-printElement-text design" style="position: absolute; width: 27pt; height: 13pt; text-align: center; left: 20pt; top: 135pt;"><div class="hiprint-printElement-text-content hiprint-printElement-content" style="height:100%;width:100%">目标</div><div panelindex="6" class="resize-panel" style="width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; background-color: rgba(0, 0, 0, 0.5); cursor: move; display: none;"><div class="s resizebtn" style="cursor: s-resize; bottom: -12px; margin-left: -4px; left: 50%; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div><div class="e resizebtn" style="cursor: e-resize; top: 50%; margin-top: -4px; right: -12px; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div></div></div><div tabindex="1" class="hiprint-printElement hiprint-printElement-text design" style="position: absolute; width: 562pt; height: 13pt; font-size: 13pt; left: 20pt; top: 160pt;"><div class="hiprint-printElement-text-content hiprint-printElement-content" style="height:100%;width:100%">数据产品经理</div><div panelindex="7" class="resize-panel" style="width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; background-color: rgba(0, 0, 0, 0.5); cursor: move; display: none;"><div class="s resizebtn" style="cursor: s-resize; bottom: -12px; margin-left: -4px; left: 50%; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div><div class="e resizebtn" style="cursor: e-resize; top: 50%; margin-top: -4px; right: -12px; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div></div></div><div tabindex="1" class="hiprint-printElement hiprint-printElement-text design" style="position: absolute; width: 29pt; height: 13pt; text-align: center; left: 20pt; top: 195pt;"><div class="hiprint-printElement-text-content hiprint-printElement-content" style="height:100%;width:100%">教育</div><div panelindex="8" class="resize-panel" style="width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; background-color: rgba(0, 0, 0, 0.5); cursor: move; display: none;"><div class="s resizebtn" style="cursor: s-resize; bottom: -12px; margin-left: -4px; left: 50%; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div><div class="e resizebtn" style="cursor: e-resize; top: 50%; margin-top: -4px; right: -12px; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div></div></div><div tabindex="1" class="hiprint-printElement hiprint-printElement-text design" style="position: absolute; width: 561pt; height: 17pt; font-size: 12pt; font-weight: 600; line-height: 17pt; left: 20pt; top: 230pt;"><div class="hiprint-printElement-text-content hiprint-printElement-content" style="height:100%;width:100%">信息管理与信息系统</div><div panelindex="9" class="resize-panel" style="width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; background-color: rgba(0, 0, 0, 0.5); cursor: move; display: none;"><div class="s resizebtn" style="cursor: s-resize; bottom: -12px; margin-left: -4px; left: 50%; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div><div class="e resizebtn" style="cursor: e-resize; top: 50%; margin-top: -4px; right: -12px; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div></div></div><div tabindex="1" class="hiprint-printElement hiprint-printElement-text design" style="position: absolute; width: 561pt; height: 15pt; font-weight: 600; left: 20pt; top: 255pt;"><div class="hiprint-printElement-text-content hiprint-printElement-content" style="height:100%;width:100%">北京邮电大学</div><div panelindex="10" class="resize-panel" style="width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; background-color: rgba(0, 0, 0, 0.5); cursor: move; display: none;"><div class="s resizebtn" style="cursor: s-resize; bottom: -12px; margin-left: -4px; left: 50%; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div><div class="e resizebtn" style="cursor: e-resize; top: 50%; margin-top: -4px; right: -12px; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div></div></div><div tabindex="1" class="hiprint-printElement hiprint-printElement-text design" style="position: absolute; width: 120pt; height: 13pt; left: 20pt; top: 280pt;"><div class="hiprint-printElement-text-content hiprint-printElement-content" style="height:100%;width:100%">北京</div><div panelindex="11" class="resize-panel" style="width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; background-color: rgba(0, 0, 0, 0.5); cursor: move; display: none;"><div class="s resizebtn" style="cursor: s-resize; bottom: -12px; margin-left: -4px; left: 50%; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div><div class="e resizebtn" style="cursor: e-resize; top: 50%; margin-top: -4px; right: -12px; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div></div></div><div tabindex="1" class="hiprint-printElement hiprint-printElement-text design" style="position: absolute; width: 120pt; height: 13pt; left: 20pt; top: 305pt;"><div class="hiprint-printElement-text-content hiprint-printElement-content" style="height:100%;width:100%">时间：2008</div><div panelindex="12" class="resize-panel" style="width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; background-color: rgba(0, 0, 0, 0.5); cursor: move; display: none;"><div class="s resizebtn" style="cursor: s-resize; bottom: -12px; margin-left: -4px; left: 50%; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div><div class="e resizebtn" style="cursor: e-resize; top: 50%; margin-top: -4px; right: -12px; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div></div></div><div class="hiprint-printElement hiprint-printElement-longText design" style="position: absolute; width: 561pt; height: 40pt; left: 20pt; top: 345pt;" tabindex="1"><div class="hiprint-printElement-longText-content hiprint-printElement-content" style="height: 100%; width: 100%; border: 1px dashed rgb(206, 188, 188);"><span class="long-text-indent"></span>技能：MYSQL,HIVE(数据仓库工具),SPSS(统计产品已服务解决方案),数据挖掘，跨部门沟通能力，业务理解能力，数据解读分析。</div><div panelindex="13" class="resize-panel" style="width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; background-color: rgba(0, 0, 0, 0.5); cursor: move; display: none;"><div class="s resizebtn" style="cursor: s-resize; bottom: -12px; margin-left: -4px; left: 50%; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div><div class="e resizebtn" style="cursor: e-resize; top: 50%; margin-top: -4px; right: -12px; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div></div></div><div class="hiprint-printElement hiprint-printElement-table design" style="position: absolute; width: 559pt; height: 44pt; left: 20pt; top: 420pt;" tabindex="1"><div class="hiprint-printElement-table-handle"></div><div class="hiprint-printElement-table-content" style="height:100%;width:100%"><div class="hi-grid-row table-grid-row"><div class="tableGridColumnsGutterRow hi-grid-col" style="width:100%;"><div class="columngrips" style="width: 743px;"><div class="columngrip" style="left: 186.5px; height: 30px;"><div class="gripResizer"></div></div><div class="columngrip" style="left: 372.583px; height: 30px;"><div class="gripResizer"></div></div><div class="columngrip" style="left: 558.667px; height: 30px;"><div class="gripResizer"></div></div><div class="columngrip" style="left: 744.75px; height: 30px;"><div class="gripResizer"></div></div></div><table class="hiprint-printElement-tableTarget hitable" style="border-collapse: collapse;"><thead><tr><td id="15" column-id="position" haswidth="haswidth" style="text-align: center; width: 139.75pt;" class="hidroppable">职位</td><td id="16" column-id="company" haswidth="haswidth" style="text-align: center; width: 139.75pt;" class="hidroppable">公司</td><td id="17" column-id="address" haswidth="haswidth" style="text-align: center; width: 139.75pt;" class="hidroppable">地点</td><td id="18" column-id="date" haswidth="haswidth" style="text-align: center; width: 139.75pt;" class="hidroppable">时间</td></tr></thead><tbody><tr><td field="position" style="text-align: center;" class="hidroppable"></td><td field="company" style="text-align: center;" class="hidroppable"></td><td field="address" style="text-align: center;" class="hidroppable"></td><td field="date" style="text-align: center;" class="hidroppable"></td></tr></tbody></table></div></div></div><div class="s resizebtn" style="cursor: s-resize; bottom: -12px; margin-left: -4px; left: 50%; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div><div class="e resizebtn" style="cursor: e-resize; top: 50%; margin-top: -4px; right: -12px; position: absolute; width: 8px; height: 8px; background: rgb(255, 102, 0); border-radius: 50%;"></div></div></div><div class="hiprint_rul_wrapper">
+                     <img class="h_img" src="data:image/png;base64,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">
+                     <img class="v_img" src="data:image/png;base64,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9X6eqmP080QdMz9Prcfo56n1GP08UcfMzxN1bN1vT1sfvAtmztM+TPh2MsUAI9/g+OqMOgj2ybUbWok6GHTtD/C3BZFUHdyAa2MMEnW0NpE8rjjx5WdA0nXQd9pE+1mTRB0E++TajepEHf3n1arjatbHUQdwjHxjNR3Q5nH/kz70uemC1XXM6sE2rR7HxhXR+p6qo+030nT07fRxhUek66Df9J820XwvsR5safefw4k66C/tvXzuNh39WGuvSdBBv5kXHINUHWxpp9ejjSuC/WQdbR8SdfTt9HE1+nmijr7PBJpS68GWdvPzVB178cFRR/8atrQTdND33s9TdbClnV6P0c+TdbR9SNTRt9PH1ejniTrod/MKon1upekAtrSbn6fq2IsPznS088XGajr+Z/YiRB1roY61UMdaqGMt1LEW6lgLdayFOtZCHWuhjrVQx1qoYy3UsRbqWAt1rIU61kIda6GOtVDHWtzxb6CLiIiIiIiIiIiIiIiIiIgU9x22e+CPh2066lgLdayFOtZCHWuhjrVQx1qoYy3UsRbqWAt1rIU61kIda6GOtVDHWqhjLdSxFupYC3WshTqW4dat/wKB2hwSL8nDjQAAAABJRU5ErkJggg==">
+                    </div></div></div></div>
+                    <div style="padding-top:15px;">
+                        <button type="button" class="btn btn-primary" onclick="getJsonTid()">生成json到textarea</button>
+                        <button type="button" class="btn btn-danger" onclick="jsonPreview()">json打印预览</button>
+                    </div>
+                    <div class="hinnn-callout hinnn-callout-danger">
+
+                        <p><code>可视化</code>结果以Json的形式存在，用户可以<code>编辑Json</code>实现特殊化操作，如：数据<code>formatter</code>，<code>文本变色</code>,单元格<code>改变背景</code>等。具体请参考文档。</p>
+                    </div>
+                    <textarea class="form-control" rows="10" id="textarea"></textarea>
+                    <div style="padding:15px 0;">
+                        <button type="button" class="btn btn-danger" onclick="getHtml()">生成html到textarea</button>
+                    </div>
+                    <textarea class="form-control" rows="10" id="textarea_html">
+</textarea>
+                    
+                </div>
+                <div class="col-sm-12 " style="padding-right:0px;">
+                    <div style="margin:10px 0;">
+   <script async="" src="./demo2_files/f(2).txt"></script>
+<!-- 横幅广告 -->
+<ins class="adsbygoogle" style="display:inline-block;width:970px;height:112px" data-ad-client="ca-pub-2624961100945767" data-ad-slot="3416480539" data-adsbygoogle-status="done" data-ad-status="unfilled"><div id="aswift_1_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 112px; width: 970px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:970px;height:112px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="970" height="112" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./demo2_files/ads.html" data-google-container-id="a!2" data-load-complete="true"></iframe></div></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+    </content>
+    <sider class="hinnn-layout-sider" style="">
+        <div class="container height-100-per" style="padding-top:65px;width:278px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="PrintElementOptionSetting" style="margin-top:10px;"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </sider>
+</layout>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document" style="display: inline-block; width: auto;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">打印预览</h4>
+            </div>
+            <div class="modal-body">
+                <button type="button" class="btn btn-danger" onclick="printByHtml()">打印</button>
+                <div class="prevViewDiv"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+
+
+
+</div>
+
+    </div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./demo2_files/ads(1).html" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins>
+
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script> -->
+    <script src="./demo2_files/bootstrap.min.js.下载"></script>
+    <script src="./demo2_files/jquery.nicescroll.min.js.下载"></script>
+    <script src="./demo2_files/hiprint.bundle.js.下载"></script>
+
+    
+    <script src="./demo2_files/config-etype-provider.js.下载"></script>
+    <script src="./demo2_files/config-print-json.js.下载"></script>
+    <script src="./demo2_files/config-print-data.js.下载"></script>
+    <script src="./demo2_files/polyfill.min.js.下载"></script>
+<script src="./demo2_files/jquery.hiwprint.js.下载"></script>
+<script src="./demo2_files/JsBarcode.all.min.js.下载"></script>
+<script src="./demo2_files/qrcode.js.下载"></script>
+<script src="./demo2_files/jquery.minicolors.min.js.下载"></script>
+<script src="./demo2_files/canvas2image.js.下载"></script>
+<script src="./demo2_files/canvg.min.js.下载"></script>
+<script src="./demo2_files/html2canvas.min.js.下载"></script>
+<script src="./demo2_files/jspdf.min.js.下载"></script>
+<script src="./demo2_files/socket.io.js.下载"></script>
+<script src="./demo2_files/hiprint.config.js.下载"></script>
+    <script>
+        var hiprintTemplate;
+        $(document).ready(function () {
+            $(".print-content").niceScroll();
+            //初始化打印插件
+            hiprint.init({
+                providers: [new configElementTypeProvider()]
+            });
+
+            //hiprint.PrintElementTypeManager.build('.hiprintEpContainer', 'testModule');
+            //设置左侧拖拽事件
+            hiprint.PrintElementTypeManager.build('.hiprintEpContainer', 'testModule');
+
+            hiprintTemplate = new hiprint.PrintTemplate({
+                template: configPrintJson,
+                settingContainer: '#PrintElementOptionSetting',
+                paginationContainer: '.hiprint-printPagination'
+            });
+            //打印设计
+            hiprintTemplate.design('#hiprint-printTemplate');
+        });
+
+        //预览
+        var preview = function () {
+            $('#myModal .modal-body').html(hiprintTemplate.getHtml(printData))
+            $('#myModal').modal('show')
+        }
+
+        //预览
+        var setPaper = function (paperTypeOrWidth, height) {
+            hiprintTemplate.setPaper(paperTypeOrWidth, height);
+        }
+        //旋转
+        var rotatePaper = function () {
+            hiprintTemplate.rotatePaper();
+        }
+        var clearTemplate = function () {
+
+            hiprintTemplate.clear();
+        }
+
+        var getJsonTid = function () {
+            $('#textarea').html(JSON.stringify(hiprintTemplate.getJsonTid()))
+        }
+        var getHtml = function () {
+            $('#textarea_html').val(hiprintTemplate.getHtml(printData)[0].outerHTML)
+        }
+
+        //预览
+        var jsonPreview = function () {
+            var testTemplate = new hiprint.PrintTemplate({ template: JSON.parse($('#textarea').val()) });
+
+            $('#myModal .modal-body .prevViewDiv').html(testTemplate.getHtml(printData))
+            $('#myModal').modal('show')
+
+        }
+
+
+        //直接调用浏览器的打印
+        directPrint = function () {
+            hiprintTemplate.print(printData);
+           
+        }
+
+        var printByHtml = function () {
+            hiprintTemplate.printByHtml($('#myModal .modal-body .prevViewDiv'));
+           
+        }
+    </script>
+
+    <script src="./demo2_files/tctip-1.0.1.min.js.下载"></script>
+    <script> 
+        $(document).ready(function () {
+            new tctip({
+                top: '20%',
+                button: {
+                    id: 9,
+                    type: 'dashang',
+                },
+                list: [
+                   
+                      {
+                          type: 'wechat',
+                          qrImg: '/Content/assets/weixnpay.png'
+                    }
+                      
+                ]
+            }).init()
+
+        });
+    </script>
+
+<div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr" style="width: 8px; z-index: auto; cursor: default; position: absolute; top: 50px; left: 1413px; height: 919px; display: none; opacity: 0;"><div class="nicescroll-cursors" style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div></div><div id="ascrail2000-hr" class="nicescroll-rails nicescroll-rails-hr" style="height: 8px; z-index: auto; top: 961px; left: 81px; position: absolute; cursor: default; display: none; opacity: 0;"><div class="nicescroll-cursors" style="position: absolute; top: 0px; height: 6px; width: 0px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px; left: 0px;"></div></div><div style="width: 1in; height: 1in; position: absolute; left: 0px; top: 0px; z-index: 99; visibility: hidden;"></div><div style="width: 1in; height: 1in; position: absolute; left: 0px; top: 0px; z-index: 99; visibility: hidden;"></div><div class="tctip" style="top: 20%;"><a class="tctip-btn-box" href="javascript:;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAABdCAYAAADAM7TWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpCODE5MjMyNEYyOEJFNDExOTlCNkY0REE0Mjk1RUE2MSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2RThFQzBCNjhDRjQxMUU0QjU4MThFMEJGNDM2OEE2NCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2RThFQzBCNThDRjQxMUU0QjU4MThFMEJGNDM2OEE2NCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkE3MzAxMjMwRkE4QkU0MTE5OUI2RjREQTQyOTVFQTYxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkI4MTkyMzI0RjI4QkU0MTE5OUI2RjREQTQyOTVFQTYxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+LrQk8wAABP5JREFUeNrsm89vE0cUx59/ZW2wA3Hs2KlDogSoUKMIqGhTlf6QeqiqVqByQdy491Rx4B/opYo49dA7lx64oUoVh6qHVKhAWyht06gyhAIxCXa8JHXAjo2dznfwWBP/2B+212uVfdJoHcfe+eyb73vz3kRxnZpfo3qbG30SZJcv2DjFRoINL1ls3iYQX7LLubVC2Zd6WqZMoUz58jZVtnsEwgAG2GV+s1SZva2WiIFQL032yHy2UJm9ltmi51Y/fhNzV71xAZ64bhMEB6kK8/Nb2SKVbIIQHpljgvSoWxWy0wByAtFhtwEk3usIaQXiRZ7oBxCq2M/xAqQfzAFxQBwQB8QB+d+CmG4Tjk+OkOL10G+pLKnPivaBHBjZQ5FggB7n8vaCNLOAz0NTwyFayuZ0PxsOKLR31wAtrK53HwQQH02Pm/oOoPOlcndBCuyGa5v5hvdD/gGup2a/kyEMgUzH91IsFKj9jBvDXmVaEe9vPS/TxevJhu+enT1ICtPTL/czDUthWiOY7Oh4tHE5ontqr/HEV++lrRUrwhQRIuzYRJRHzbWlVVrPF2tLY3nUIETlMAUIDBB67n45MqtsicFddHgsTBvMO5ZrpGWq3x/n4Qm79SBjvUfCLAtOhkMUGwzQ2FCwNjlscUWlvx9v0F0DGbVjkA8PjVFiKMhf5wpFnjOQS67eXe2qWHVBHj7Z5Nc/Hql8YpGkei5WLsIOhehUaC9HQkPxgyF235V/n+mGvRzqXQHZzwqfT49M1n5GCLcqEz84OEr7wkG+MQrTgzYMgoSFyfmWz3ZihHIrQ7o/WoVAefBnSjVU2xpemm9+Thq64a/LWSowaHjBTHFtGMTMTdvJuG1FDYTYTBsYPdl9ETWnX5/i0SAvFd4X5eRP/6R3FMZn2OflLaIrHsEED9VNHsInZiZ2vN+sUke0YcNUGKhez2N6aX5IrtBSZoOHJyp8LXuDlZWItu8XUw3tQ725ksnk9uX72nH+8WtjFA3t3HHhFRHSrXoYwOIzKB+EZVj4f/fXcnsaAQRuKk8iQ4hapd759csV0SgfTInVSKOkJfTP3pvuXs0KAb5zIG7qO3fSG3STJbqOwxc3QrQgW46yyh0uFmWjlkEz0A6+C7FeWXjQshkzBCK3CgARcIggLUOCk9tVrWVtu50YYQLWy6QjoYA1mVU+gkCSwnavZ/is3hK2BfKI6eTSzSV7W04c5L01FW9rInSDWpoyBSKOIVKs10nn8oa1JBq0rve+gJCfDrllgukF5yj1kQFBGwHpShUfH3xxqiTOTixvJ/zVCr7e9lWfGLlFHFckqvnGErHeU3NUYNlRrsqxM8P14hwNe8onM+M8o0JLKIi+nl/QLQNMgcjHWIig6VfCfEJRc9QyKJscvwMghgDqOLOK83e+DOFgrfaAoUi6srhce2Jc4RkMFE4zEhBe/3hnlVJN+hzDHpH3DGx4ALi9rDa9qby3YAAIJ0yRUIf1CJ4OHkB4rrOlSRno3OqBULNCP63aEsMe0dtpjRTeWoJ1jiUcEAfEAXFAHJBegGx73a6+ACn5Pf0Bkh5W3H0B8m1it6cvQM5H/Z5y2GavuM+vDOFvZV8dGR4gn42i5W5gMOdCPveNN6MK2RVB8nq8G/G7f38/rlDE77EPhHmlyMbhoM994XhMKb0dU2gi6KXdXhf1wkkujf+dmGPjJBsx6sH/TvwnwAD/lU0rvEJ+QAAAAABJRU5ErkJggg=="></a><div class="tctip-main-box"><h1 class="tctip-title">喜欢请打赏</h1><div class="tctip-body-box"><div class="tctip-icon-box"><ul class="not-full"><li class="tctip-current"><a class="" href="javascript:">微信<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVFSURBVEhLtVZrTJNXGH7BC0oLxhjMfsxE4xJ3z24xcf7YssmPZWZuxphtWba/259ll8zM6EJMxA0dZsoMm5q5LVkWF10krlIKRe6XcmuFCuMu0KICgoAUpPDsOd93OmopKM49zfP2nPN953m+876n56vMgteyRZqsDvEmTEhjAvh9f7ys6U3oleaEVKm1JmmHCFQlrpfmRJu08Oa/9eSGB0Bl3kY2W/qlPuEL7aZRH7deGq2t4ks0b4wm8F+pFtRD/UuWg9qVcFtzjcF6XpyTVtKiGe36PVCVrt3w2SrisbxqpFY91aVI0sQdC6kTk5449peE9ZdGmXMXdqhVW7OFnTzjSTwRrIsxTJ5p3oxd/r04deM3ZN204czQOWT0/4Cdne9jZcMaSK16gGUUo2CkRjSqveNJuCZSZx0XNzv/kimtETzV+ALODp7D5PQk5kL7eCc+69mNxXXMTN1izqX5HVpzMshUs1EXxmrBtradGJgc1PJ3R9aQDYnu1XxgVQaah+tFozKXWoYQq2KwqekVBKYCWhLoHb+qW3ciEAygb2JA94A/B89jUc1y6sTP6M1HqWFQrF6OJdWJqByp1lLAcf9PSCpKwpGeTD1iIjgdxHbvu1hd9jDqR716FPig40OIizUPac5HqWZQrIzBlqY3tISJY70/IrYsDt/6juoRE8r4tabtWOFaZdQ5BMdQPqSCxq5F1GTdQ9rRKFUMiuWCr7r3a4kZdN32YZqfSEzx0z3hQ+GNEnzffRzpVzJwqOsIXrycjNV1a7kQbjb1EFXcrCGPcIqLwcWLpYLDvgwte3d4hhuQ2n4Qx3tOoXbEjasT1zEavGVko29yAGcGziH58uuQMppXsvYubjrDS1MqaKpYLPiyI0XLzo+CG0XY07oPrWPteiQ6VJ7SfIeZTR48FfytV9Aw5CflDIolMdjsTjZnzIPWW23Y3ZKC4eCI0W+71YGW0TajHYI/0IuG4ZlNl9pziPpceTnrHvKTMgaDyxFbuAw5/U59e3Skdx6Fe8RjtKenp/FI+dNYU7IB48FxY0zhTc/bkNyl6An4jf4U79vofplZ5fEb8pNShhCLYvF4+XO4Pt5vTIjENdYxreOw7pnI9J/AUV8mxaf0CHC2LwspnQcwFhzTI8B3PccgBVx1KVetvKSEIZz5gk2VLzGFs+vnHr6EzK4Turcw2AfyIMyoFHOjKR8pYghnMZ/IITjl+1VPmYFv3I+T3T/r3sJwoS+HK+YmK6Kx8pFChnBeXMITaR1uTt6EZ6geO2vew46ad7C/OQ37mg/gI+8nWmph+LojnXVnqkM+UsAQzvzFeLJiI1KaUpGYy4M/hzczA5JtMt65Ck0jLVru3jDGc/2x0uchTp5oIR+5yBBJJ2mnkZMv+juumWVIdm3FRPC2lp0faud/7N1l6oVrST7DLNLA4BzXuPKtlW+hc/SKlp8b6W0ZEJtaBN9a4TpGUCtcEE3zh3LXYq83BeX9legL9Bu/5aGJIdQOuvF712mjfbL7F529sPm51klh8OsOJG+BzOGL/y9BjM2KNXkb8Gj+s1jnfAJx2SshWfwXU7ARexr3weJMoj53s5qj6ptn9dHY8o2xvZWxY4FUc4x5FLVz42TzZFLfDv5e1bjq2xYhxsEXRGhOGc9ru8UmcoH/8B3xw8YWDxd9YFQbUrfViktpnGPdYf6vtls+l3IOGOn7n6iM1evQbj0tKRJrGivYLWlSyAslpEqT/QFRGaq6qoXZrTbJXblCO4Yh27pN8iznebOf7alZIvfD7PgRLqRKciyfyh+y1DQS+Qc7LndRdtdxOQAAAABJRU5ErkJggg==" alt="微信"></a></li></ul></div><div class="tctip-qr-detail"><div class="tctip-qr-box"><p class="tctip-qr-title">扫描二维码打赏</p><div class="tctip-qr-code"><img src="./demo2_files/weixnpay.png"></div><p class="tctip-qr-desc">微信打赏</p></div></div></div><p class="tctip-footer"><a href="https://github.com/greedying/tctip" target="_blank"></a></p></div></div><script src="http://stat.tctip.com/stat/index/version/1.0.1"></script></body><iframe id="google_esf" name="google_esf" src="./demo2_files/zrt_lookup.html" style="display: none;"></iframe></html>
